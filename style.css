@@ -1,0 +1,444 @@
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(226, 43%, 10%);
+        font-family: 'Rubik', sans-serif; 
+    }
+    
+    .header-and-main-wrapper{
+        position: relative;
+        margin-top: 20px;
+        height: 460px;
+        width: 70%;
+        display: flex;
+        box-sizing: content-box;
+    }
+    
+    header{
+       max-height: 480px;
+        width: 22%;
+        background-color: hsl(235, 46%, 20%);
+       border-radius: 1rem;
+       box-sizing: border-box;
+    
+    }
+    
+    .profile{
+        height: 65%;
+        width: 100% ;
+        background-color: hsl(246, 80%, 60%);
+        color: white;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        padding:30px ;
+    }
+    .report p{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.report .twenty-px{
+    margin-top: 0px;
+}
+    
+    .profile-picture-container{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.profile-picture{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px;
+    
+}
+    li{
+    display: inline;
+    margin-top: 20px;
+}
+    a{
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+    font-size: 18px;
+}
+
+   a:hover{
+      color: white;
+      cursor: pointer;
+   }
+    #white-link {
+    color: white;
+}
+    
+    .twenty-px{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.top-card{
+   padding: 20px;
+   border-radius: 1rem;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 100%;
+    height: 180px;
+    bottom: 0;
+    background-color: hsl(235, 46%, 20%);
+    box-sizing: border-box;
+}
+.top-card:hover{
+   background-color: hsl(235, 45%, 61%);
+}
+.left p{
+    color: white;
+    margin: 0;
+}
+.bold{
+    font-size: 18px;
+    font-weight: 500;
+}
+.right{
+   color: hsl(235, 45%, 61%);
+   text-align: right;
+}
+
+.right img:hover{
+   cursor: pointer;
+}
+.right p{
+    display: none;
+}
+
+.bottom-card{
+   padding: 20px;
+   border-radius: 1rem;
+   box-sizing: border-box;
+}
+
+main{
+    position: absolute;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 20px;
+    top: 0px;
+    right: 10px;
+    left: 24%;
+    width : 77%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.card{
+    height: 220px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.play-card .bottom-card{
+    background-color: hsl(195, 74%, 62%);
+}
+.study-card .bottom-card{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise-card .bottom-card{
+    background-color: hsl(145, 58%, 55%);
+}
+.social-card .bottom-card{
+    background-color: hsl(264, 64%, 52%);
+}
+.selfcare-card .bottom-card{
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+.bottom-card{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    background-color: hsl(15, 100%, 70%);
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+    .icons{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+    
+    footer{
+        position: absolute;
+        bottom: 0;
+        color: white;
+    }
+    
+  
+@media(max-width: 1024px){
+   main{
+      grid-template-columns:auto auto;
+      width: 70%;
+      max-height: 750px;
+      left: 25%;
+   }
+   .header-and-main-wrapper{
+      width: 90%;
+      height: 745px;
+   }
+   header{
+      max-height: 745px;
+      width: 200px;
+      left: ;
+   }
+@media(max-width: 768px){
+   main{
+      grid-template-columns:auto auto;
+      width: 70%;
+      left: 30%;
+   }
+   
+   .header-and-main-wrapper{
+      width: 90%;
+   }
+   
+   header{
+      width: 25%;
+   }
+   .twenty-px{
+      font-size: 35px;
+   }
+}
+
+
+
+@media(max-width: 480px){
+    body{
+    width: 100%;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;    
+}
+
+.header-and-main-wrapper{
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    position: relative;  
+    top: 10px;
+    right: px;
+    left: px;
+    z-index: 1;
+    height: 200px;
+    width: 330px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 130px;
+    width: 100% ;
+    background-color: hsl(246, 80%, 60%);
+    color: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.report{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.report p{
+    margin: 0px;
+}
+.report .twenty-px{
+    margin-top: 10px;
+}
+.profile-picture-container{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.profile-picture{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    
+}
+li{
+    display: inline;
+    margin-top: 0;
+}
+a{
+    text-decoration: none;
+    color: hsl(235, 45%, 61%);
+    font-size: 18px;
+}
+#white-link {
+    color: white;
+}
+
+.twenty-px{
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.top-card{
+   padding: 20px;
+   border-radius: 1rem;
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    background-color: hsl(235, 46%, 20%);
+    box-sizing: border-box;
+}
+.top-card:hover{
+   background-color: hsl(235, 46%, 20%);
+}
+.left p{
+    color: white;
+    margin: 0;
+}
+.lastweek{
+    display: none;
+}
+.bold{
+    font-size: 18px;
+    font-weight: 500;
+}
+.right{
+   color: hsl(235, 45%, 61%);
+   text-align: right;
+}
+
+.right p{
+    display: block;
+}
+
+.bottom-card{
+   padding: 20px;
+   border-radius: 1rem;
+   box-sizing: border-box;
+}
+
+main{
+    position: absolute;
+    grid-template-columns: auto;
+    top: 200px;
+    right: px;
+    left: 0px;
+    width : 330px;
+    box-sizing: content-box;
+}
+
+.card{
+    height: 160px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 1rem;
+}
+.play-card .bottom-card{
+    background-color: hsl(195, 74%, 62%);
+}
+.study-card .bottom-card{
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise-card .bottom-card{
+    background-color: hsl(145, 58%, 55%);
+}
+.social-card .bottom-card{
+    background-color: hsl(264, 64%, 52%);
+}
+.selfcare-card .bottom-card{
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+.bottom-card{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    background-color: hsl(15, 100%, 70%);
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+.icons{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+footer{
+    position: absolute;
+    bottom: -750px;
+}
+
+}
+
+ .attribution { 
+     font-size: 11px; 
+     text-align: center; 
+     color: white;
+     }
+    .attribution a { 
+    font-size: 11px; 
+    color: hsl(228, 45%, 44%); 
+    }
+    
+
+

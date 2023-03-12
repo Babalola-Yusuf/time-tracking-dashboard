@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="header-and-main-wrapper">
+    <header>
+        <div class="profile">
+            <div class="profile-picture-container">
+                <img src="image-jeremy.png" alt="profile picture" class="profile-picture">
+            </div>
+            <div class="report">
+                <p> Report for</p>
+                <p class="twenty-px"> Jeremy Robson</p>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Daily</a></li>
+                    <li><a href="#" id="white-link">Weekly</a></li>
+                    <li><a href="#">Monthly</a></li>
+                </ul>
+            </nav>
+        </div>      
+    </header>
+    
+    
+    
+    <main id="monthly-page">
+        <div class="card work-card">
+            <div class="bottom-card">
+                <img src="icon-work.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Work</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card play-card">
+            <div class="bottom-card">
+                <img src="icon-play.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Play</p>
+                   <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                   <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card study-card">
+            <div class="bottom-card">
+                <img src="icon-study.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Study</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card exercise-card">
+            <div class="bottom-card">
+                <img src="icon-exercise.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Exercise</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card social-card">
+            <div class="bottom-card">
+                <img src="icon-social.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Social</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card selfcare-card">
+            <div class="bottom-card">
+                <img src="icon-self-care.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Self Care</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last month - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <main id="daily-page">
+        <div class="card work-card">
+            <div class="bottom-card">
+                <img src="icon-work.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Work</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card play-card">
+            <div class="bottom-card">
+                <img src="icon-play.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Play</p>
+                   <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                   <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card study-card">
+            <div class="bottom-card">
+                <img src="icon-study.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Study</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card exercise-card">
+            <div class="bottom-card">
+                <img src="icon-exercise.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Exercise</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card social-card">
+            <div class="bottom-card">
+                <img src="icon-social.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Social</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card selfcare-card">
+            <div class="bottom-card">
+                <img src="icon-self-care.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Self Care</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Yesterday - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <main id="weekly-page">
+        <div class="card work-card">
+            <div class="bottom-card">
+                <img src="icon-work.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Work</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card play-card">
+            <div class="bottom-card">
+                <img src="icon-play.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Play</p>
+                   <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+     <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>      
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card study-card">
+            <div class="bottom-card">
+                <img src="icon-study.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Study</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                   <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card exercise-card">
+            <div class="bottom-card">
+                <img src="icon-exercise.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Exercise</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card social-card">
+            <div class="bottom-card">
+                <img src="icon-social.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Social</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card selfcare-card">
+            <div class="bottom-card">
+                <img src="icon-self-care.svg" alt="" class="icons">
+            </div>
+            <div class="top-card">
+                <div class="left">
+                    <p class="bold"> Self Care</p>
+                    <p class="twenty-px"><span class="current-hr">32</span>hrs</p>
+                    <p class="lastweek">Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+                <div class="right">
+                    <img src="icon-ellipsis.svg" alt="">
+                    <p>Last week - <span class="prevWeekHr">36</span>hrs</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</section>
+
+<footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Babalola Yusuf</a>.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
